@@ -1,9 +1,10 @@
 import React from 'react'
-import './Message.css'
+import './Message.scss'
 
-const Message = ({message: {name, userId, text}, currentUuid}) => {
+const Message = ({message, currentUuid, color}) => {
+    const colorArray = Array.from(color);
     let isCurrentId = false;
-    if(userId === currentUuid) {
+    if(message.userId === currentUuid) {
         isCurrentId = true; 
     }
 
@@ -11,12 +12,12 @@ const Message = ({message: {name, userId, text}, currentUuid}) => {
         isCurrentId ? (
             <div className="row right-align">
                 <div className="col s12 m8 16 right">
-                    <p className="sentbyme">{`${name}: ${text}`}</p>
+                    <p className="sentbyme">{`${message.name}: ${message.text}`}</p>
                 </div>
             </div>) : (
             <div className="row left-align">
                 <div className="col s12 m8 16 left">
-                    <p className="sentbyother">{`${name}: ${text}`}</p>
+                    <p className={`sentbyother user-${colorArray.indexOf(message.userId)}`}>{`${message.name}: ${message.text}`}</p>
                 </div>
             </div>
         )
