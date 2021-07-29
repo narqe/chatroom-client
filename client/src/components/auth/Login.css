@@ -1,0 +1,8 @@
+.login-container,
+.signup-container {
+    max-width: 600px;
+    margin: 2em auto;
+    border: 1px solid #e8e8e8;
+    padding: 2em;
+    border-radius: 4px;
+}

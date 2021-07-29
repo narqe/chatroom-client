@@ -1,0 +1,42 @@
+.roomList {
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.home-container {
+    max-width: 960px;
+    margin: 2em auto;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:not(.browser-default):focus {
+    border-bottom: 0.5px solid #FFF;
+    box-shadow: 0 1px 0 0 #FFF;
+}
+
+/* label focus color */
+.input-field input[type=text]:not(.browser-default):focus + label,
+.input-field input[type=text]:not(.browser-default) + label {
+    color: #FFF;
+}
+
+.border-card {
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+.delete-btn {
+    border: 1px solid #f32121;
+    color: red;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.listItem-room{
+    margin: 1em 0;
+    border: 1px solid #2196f361;
+    border-radius: 4px;
+}

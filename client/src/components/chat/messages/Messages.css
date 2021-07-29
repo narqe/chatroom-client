@@ -1,0 +1,17 @@
+.chat-box {
+    margin: 0 auto;
+    height: 400px;
+    display: block;
+    overflow: scroll;
+    border-top: 1px solid #2196f361;
+    border-left: 1px solid #2196f361;
+    border-right: 1px solid #2196f361;
+    border-radius: 4px 4px 0px 0px;
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 2em auto;
+}
